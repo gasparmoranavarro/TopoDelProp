@@ -30,9 +30,9 @@ email=topodelprop@gmail.com
 # tags are comma separated with spaces allowed
 tags=cadastre, boundary, delimitation, property, topography, metadata
 
-homepage=
+homepage=http://personales.upv.es/joamona/TopoDelProp/index-en.html
 tracker=da
-repository=
+repository=https://github.com/gasparmoranavarro/TopoDelProp
 icon=icon.png
 # experimental flag
 experimental=True

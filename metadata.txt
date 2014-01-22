@@ -31,7 +31,7 @@ email=topodelprop@gmail.com
 tags=cadastre, boundary, delimitation, property, topography, metadata
 
 homepage=http://personales.upv.es/joamona/TopoDelProp/index-en.html
-tracker=da
+tracker=https://github.com/gasparmoranavarro/TopoDelProp/issues
 repository=https://github.com/gasparmoranavarro/TopoDelProp
 icon=icon.png
 # experimental flag

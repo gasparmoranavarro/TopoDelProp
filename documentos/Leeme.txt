@@ -1,0 +1,12 @@
+Sistema TopoDelProp. Descripción de documentos.
+
+Puede encontrar la justificación del sistema y el manual del programa y configuración en el documento de tesis:
+
+http://riunet.upv.es/handle/10251/321/browse?authority=27239&type=author
+
+BaseDatosEjemplo: Contiene un fichero y unas intrucciones para restaurar una base de datos y poder hacer pruebas y examinar el sistema. Puede descargar el archivo de una entrada del blog http://personales.upv.es/joamona/index.html
+
+cbd: contiene ficheros con código SQL que hay que ejecutar para restaurar la base de datos de ejemplo, o en el caso de que se desee crear una base de datos vacía y comenzar desde cero, en cualquier otro sistema de referencia.
+
+GestionUsuarios: contiene una aplicación Python para facilitar la gestión de usuarios de la base de datos
+

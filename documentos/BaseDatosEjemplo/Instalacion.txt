@@ -1,0 +1,41 @@
+-- Descargue el fichero burrPG2 (base de datos ejemplo) de http://personales.upv.es/joamona/index.html
+
+-- Los datos están en el sistema EPSG 25830
+
+--Instalar PostgreSQL 9.1, 9.2, 9.3 y PostGIS 2.0, 2.1
+
+-- Debe crear un superusuario que se llame postgres2, de lo contrario la restauración de la base de datos fallará
+
+-- Crear la base de datos
+
+createdb -U usuario -E UTF8 propiedad
+
+
+--entrar a la base de datos
+psql -U usuario -d nombrebasedatos
+
+--dentro de la base de datos
+create extension postgis
+
+--crear los grupos y los usuarios de partida(si no existen). Al borrar la base de datos los grupos o usuarios no se borran:
+
+\i c:/delprop/cbd/001_creaUsuarios.txt
+
+--El directorio c:/delprop debe ser creado. El directorio cbd se encuentra en el fichero cbd.zip, y contiene código SQL para la creación de la base de datos desde cero.
+
+--restaurar la base de datos
+--desde el directorio bin de postgres
+
+pg_restore -U postgres2 -d nombre_bda burrPG2
+
+-- El superusuario postgres2 debe ser creado anteriormente
+--Asignar los permisos a cada grupo sobre los objetos de la base de datos.
+--Esto, hay que hacerlo cada vez ya que los permisos eran sobre
+--objetos anteriores, hay que actualizar sobre los nuevos.
+--Si los usuarios no existen todavia, hay que crearlos con \i c:/delprop/cbd/001_creaUsuarios.txt
+
+\i c:/delprop/cbd/comun/004_permisosComun.txt
+\i c:/delprop/cbd/src25830/004_permisos25830.txt
+
+
+--Listo

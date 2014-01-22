@@ -1,0 +1,34 @@
+-- crear una copia de seguridad de todo, salvo los usuarios y el esquema public
+
+--ejecutar desde el directorio bin de postgres. Especificar todos los esquemas a exportar.
+pg_dump -U superusuario -h localhost -Fc -n comun -n dom -n ed_comun -n ed_src25830 -n script -n src25830 --disable-triggers nombre_bda > arch_salida
+
+
+--Restaurar la base de datos
+--Si existe: borrala
+--Crear la base de datos:
+
+createdb –U usuario –E UTF8 propiedad
+
+--dentro de la base de datos
+
+create extension postgis
+
+--crear los grupos y los usuarios (si no existen). Al borrar la base de datos los grupos o 
+--usuarios no se borran:
+
+\i c:/delprop/cbd/003_creaUsuarios.txt
+
+--restaurar la base de datos
+--desde el directorio bin de postgres
+
+pg_restore -U superusuario -d nombre_bda arch_salida
+
+--Asignar los permisos a cada grupo sobre los objetos de la base de datos.
+--Esto, hay que hacerlo cada vez ya que los permisos eran sobre
+--objetos anteriores, hay que actualizar sobre los nuevos.
+--Si los usuarios no existen todavia, hay que crearlos con \i c:/delprop/cbd/003_creaUsuarios.txt
+
+\i c:/delprop/cbd/004_permisosUsuarios.txt
+
+--Listo

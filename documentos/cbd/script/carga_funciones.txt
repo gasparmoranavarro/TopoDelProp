@@ -1,0 +1,39 @@
+\i /home/cbd/script/borra_errores_finca_def.txt
+\i /home/cbd/script/borra_errores_finca_ed.txt
+\i /home/cbd/script/comp_gaps_finca_def.txt
+\i /home/cbd/script/comp_gaps_finca_ed.txt
+\i /home/cbd/script/comp_over_finca_def.txt
+\i /home/cbd/script/comp_over_finca_ed.txt
+
+\i /home/cbd/script/comprueba_covers.txt
+\i /home/cbd/script/comprueba_dom.txt
+\i /home/cbd/script/comprueba_gaps.txt
+\i /home/cbd/script/comprueba_geom.txt
+\i /home/cbd/script/comprueba_overlaps.txt
+\i /home/cbd/script/comprueba_overlaps_geom.txt
+\i /home/cbd/script/comprueba_overlaps_wkt.txt
+\i /home/cbd/script/comprueba_tama.txt
+\i /home/cbd/script/genera_noticia.txt
+\i /home/cbd/script/ea_linestring_cerrada.txt
+\i /home/cbd/script/error_area_multipoligono.txt
+\i /home/cbd/script/stx_extract.txt
+\i /home/cbd/script/snap_trabajo_a2b.txt
+\i /home/cbd/script/selec_trab_cerca.txt
+\i /home/cbd/script/snap_trabajos_geom.txt
+
+\i /home/cbd/script/fdisparadoras/acceso_trabajo.txt
+\i /home/cbd/script/fdisparadoras/activa_usuario.txt
+\i /home/cbd/script/fdisparadoras/Actualiza_fecha_dom.txt
+\i /home/cbd/script/fdisparadoras/cambios_datos_trabajo.txt
+\i /home/cbd/script/fdisparadoras/comprueba_usuario.txt
+\i /home/cbd/script/fdisparadoras/error_area.txt
+\i /home/cbd/script/fdisparadoras/geom_fincas_ed.txt
+\i /home/cbd/script/fdisparadoras/geom_fincas_def.txt
+\i /home/cbd/script/fdisparadoras/geom_imagenes.txt
+\i /home/cbd/script/fdisparadoras/geom_linde.txt
+\i /home/cbd/script/fdisparadoras/geom_servid_ei.txt
+\i /home/cbd/script/fdisparadoras/propiedades_geometricas.txt
+
+--\i /home/cbd/script/fdisparadoras/crea_disparadores.txt
+
+

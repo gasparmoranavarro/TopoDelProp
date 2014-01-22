@@ -1,0 +1,12 @@
+--CREAR BASE DE DATOS propiedad
+-- Hay que teclearlo a mano en el directorio bin de postgres. No va por psql -f archivo
+
+--No copies y pegues, hay que teclear. Si no no va.
+
+createdb -U usuario -E UTF8 propiedad
+
+--dentro de la base de datos
+
+create extension postgis
+
+
